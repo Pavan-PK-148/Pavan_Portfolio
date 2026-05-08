@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import "tailwindcss";
+
+* {
+    font-family: "Outfit", sans-serif;
+}
+
+/* Smooth transition for theme switching */
+html, body {
+    @apply transition-colors duration-500 ease-in-out;
+}
+
+/* Ensure the dark class applies the background to the whole document */
+.dark {
+    background-color: #020617; /* Slate-950 */
+    color: #f8fafc; /* Slate-50 */
+}
