@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion';
 import { Github, Linkedin, FileText, ArrowRight } from 'lucide-react';
-import me from "../../assets/profile2.png";
+import me from "../../assets/Profile2.png";
 
 const Hero = () => {
   const x = useMotionValue(0);
