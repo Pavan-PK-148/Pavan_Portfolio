@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion';
 import { Github, Linkedin, FileText, ArrowRight } from 'lucide-react';
 import me from "../../assets/profile.png";
+import { Navigate } from 'react-router-dom';
 
 const Hero = () => {
   const x = useMotionValue(0);
@@ -69,9 +70,18 @@ const Hero = () => {
             transition={{ delay: 0.6 }}
             className="flex flex-wrap gap-5 justify-center lg:justify-start"
           >
-            <button className="group px-10 py-5 bg-blue-600 text-white rounded-[2rem] font-bold flex items-center gap-3 hover:bg-blue-700 transition-all shadow-2xl shadow-blue-500/40">
-              View Projects <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
-            </button>
+            <button 
+  onClick={() => {
+    const section = document.querySelector('#projects');
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  }} 
+  className="group px-10 py-5 bg-blue-600 text-white rounded-[2rem] font-bold flex items-center gap-3 hover:bg-blue-700 transition-all shadow-2xl shadow-blue-500/40 cursor-pointer"
+>
+  View Projects 
+  <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
+</button>
             <div className="flex items-center gap-6">
   {/* GitHub Link */}
   <a 
