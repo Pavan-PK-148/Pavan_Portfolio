@@ -4,7 +4,7 @@ import { ExternalLink, Award, CheckCircle, ShieldCheck, Cpu, Database, X, ZoomIn
 import apex from '../../assets/apex.png';
 import pythonai from '../../assets/python-ai.png';
 import sql from '../../assets/sql.png';
-import infosys from '../../assets/Infosys.png';
+import infosys from '../../assets/infosys.png';
 import kaggle from '../../assets/kaggle.png';
 import uptoskills from '../../assets/uptoskills.png';
 import uptoskills2 from '../../assets/uptoskills2.png';
